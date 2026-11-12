@@ -1,10 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff9f1">
+    <meta name="description" content="Kineta Valerie — Cybersecurity Student at BINUS University.">
 
     <title>Kineta Valerie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -14,167 +21,184 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            color: #222;
             min-height: 100vh;
             display: flex;
+            align-items: center;
             justify-content: center;
-            padding: 40px 20px;
+            padding: 30px 20px;
+            background-color: #fff9f1;
+            background-image:
+                radial-gradient(#ead8d0 0.7px, transparent 0.7px);
+            background-size: 22px 22px;
+            color: #493b3b;
+            font-family: 'DM Sans', sans-serif;
         }
 
         .container {
             width: 100%;
-            max-width: 600px;
+            max-width: 470px;
+            padding: 42px 38px 32px;
+            background: rgba(255, 255, 255, 0.88);
+            border: 1px solid #f0dfd8;
+            border-radius: 28px;
             text-align: center;
-        }
-
-        .profile {
-            margin-bottom: 30px;
+            box-shadow: 0 15px 45px rgba(151, 109, 101, 0.09);
         }
 
         .profile-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
+            width: 132px;
+            height: 132px;
             object-fit: cover;
-            display: block;
-            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid #f8e6e1;
+            padding: 3px;
+            background: white;
+            margin-bottom: 22px;
         }
 
         h1 {
-            font-size: 30px;
-            margin-bottom: 8px;
+            font-family: 'Playfair Display', serif;
+            font-size: 35px;
+            font-weight: 600;
+            color: #594343;
+            margin-bottom: 9px;
         }
 
         .role {
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 15px;
+            font-family: 'DM Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+            color: #bd8d91;
+            margin-bottom: 20px;
         }
 
         .bio {
-            color: #555;
+            max-width: 340px;
+            margin: 0 auto 28px;
             font-size: 14px;
-            line-height: 1.6;
-            max-width: 450px;
-            margin: 0 auto;
+            line-height: 1.8;
+            color: #817171;
         }
 
         .links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 11px;
+        }
+
+        .link-button {
             display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .link {
-            display: block;
-            padding: 15px;
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            min-height: 46px;
+            padding: 12px 10px;
+            border: 1px solid #eedbd5;
+            border-radius: 13px;
+            background: #fffaf8;
+            color: #755b5b;
             text-decoration: none;
-            color: #222;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .link-button:hover {
+            background: #f8e8e5;
+            border-color: #e8c9c5;
+            transform: translateY(-3px);
+        }
+
+        .link-button.primary {
+            background: #f3deda;
+            border-color: #f3deda;
+            color: #765454;
+        }
+
+        .link-button.primary:hover {
+            background: #ebceca;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-family: 'Playfair Display', serif;
             font-size: 15px;
-            transition: 0.2s;
+            font-style: italic;
+            color: #bd8d91;
         }
 
-        .link:hover {
-            background: #222;
-            color: white;
-        }
+        @media (max-width: 420px) {
+            .container {
+                padding: 35px 23px 28px;
+            }
 
-        footer {
-            margin-top: 35px;
-            color: #999;
-            font-size: 12px;
+            h1 {
+                font-size: 30px;
+            }
+
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="container">
 
-        <div class="profile">
+        <img
+            src="pfp%20formal.jpeg"
+            alt="Kineta Valerie"
+            class="profile-image"
+        >
 
-            <img
-                class="profile-image"
-                src="pfp%20formal.jpeg"
-                alt="Kineta Valerie"
-            >
+        <h1>Kineta Valerie</h1>
 
-            <h1>Kineta Valerie</h1>
+        <p class="role">Cybersecurity Student at BINUS University</p>
 
-            <p class="role">
-                Cybersecurity Student at BINUS University
-            </p>
-
-            <p class="bio">
-                Welcome to my portfolio.
-                <br>
-                I'm Kineta, a Cybersecurity Enthusiast and a student at BINUS University.
-                I'm passionate about learning, exploring new opportunities, and turning ideas into meaningful experiences.
-            </p>
-
-        </div>
+        <p class="bio">
+            Welcome to my portfolio. I'm Kineta, a Cybersecurity Enthusiast
+            and a student at BINUS University. I'm passionate about learning,
+            exploring new opportunities, and turning ideas into meaningful experiences.
+        </p>
 
         <div class="links">
-
-            <a
-                class="link"
-                href="https://www.linkedin.com/in/kinetavalerie/"
-                target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/kinetavalerie/"
+               target="_blank" class="link-button">
                 LinkedIn
             </a>
 
-            <a
-                class="link"
-                href="https://github.com/kinetavlr"
-                target="_blank"
-            >
+            <a href="https://github.com/kinetavlr"
+               target="_blank" class="link-button">
                 GitHub
             </a>
 
-            <a
-                class="link"
-                href="https://drive.google.com/file/d/13Fxo2mVIw_RWdUV6rHrFOjL5YOawDDDm/view?usp=drive_link"
-                target="_blank"
-            >
+            <a href="https://drive.google.com/file/d/13Fxo2mVIw_RWdUV6rHrFOjL5YOawDDDm/view?usp=drive_link"
+               target="_blank" class="link-button">
                 View My CV
             </a>
 
-            <a
-                class="link"
-                href="projects.html"
-            >
+            <a href="projects.html"
+               class="link-button primary">
                 My Projects
             </a>
 
-            <a
-                class="link"
-                href="https://www.instagram.com/kinetavlr/"
-                target="_blank"
-            >
+            <a href="https://www.instagram.com/kinetavlr/"
+               target="_blank" class="link-button">
                 Instagram
             </a>
 
-            <a
-                class="link"
-                href="https://wa.me/6281213082126"
-                target="_blank"
-            >
+            <a href="https://wa.me/6281213082126"
+               target="_blank" class="link-button">
                 WhatsApp
             </a>
-
         </div>
 
-        <footer>
-            © 2026 Kineta Valerie
-        </footer>
+        <p class="footer">Let’s get to know each other!</p>
 
-    </div>
+    </main>
 
 </body>
 </html>
